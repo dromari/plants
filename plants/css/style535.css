@@ -1,0 +1,5 @@
+@media screen and (max-width: 535px) {
+    .img-welcome-768 {
+        display: none;
+    }
+}

@@ -2,5 +2,352 @@
     body {
         max-width: 380px;
         margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
     }
+
+    .lock {
+        overflow: hidden;
+    }
+
+    .logo {
+        margin-top: 22px;
+        margin-left: 25px;
+        z-index: 6;
+    }
+
+    .burger-icon {
+        display: block;
+        z-index: 5;
+        position: relative;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        margin-top: 19px;
+        margin-right: 25px;
+    }
+
+    .burger-icon .one-span,
+    .burger-icon .two-span,
+    .burger-icon::before,
+    .burger-icon::after {
+        left: 0;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #717171;
+    }
+
+    .burger-icon::before,
+    .burger-icon::after {
+        content: "";
+    }
+
+    .burger-icon::before {
+        top: 0;
+    }
+
+    .burger-icon::after {
+        bottom: 0;
+    }
+
+    .burger-icon .one-span {
+        top: 33%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .burger-icon .two-span {
+        top: 67%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    div.burger-icon.active {
+        top: 15px;
+        display: block;
+    }
+
+    span.one-span.active {
+        display: none;
+    }
+
+    span.two-span.active {
+        display: none;
+    }
+
+    div.burger-icon.active::before {
+        transform: translateY(-50%) rotate(45deg);
+        top: 0;
+    }
+
+    div.burger-icon.active::after {
+        transform: translateY(-50%) rotate(-45deg);
+        top: 0;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+
+    .header-wrapper {
+        margin: 0;
+    }
+
+    .header-navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        /* height: 45%;*/
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: left 0.3s ease 0s;
+        margin-top: 0;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    /*.header-navigation::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #EDF2EC;
+    }*/
+
+    #home {
+        display: none;
+    }
+
+    .header-nav-list {
+        flex-direction: column;
+        line-height: 0;
+        margin-top: 72px;
+        align-items: end;
+        font-size: 30px;
+        gap: 63px;
+        padding: 0 30px;
+        color: #545050;
+        margin-bottom: 24%;
+    }
+
+    .header-nav-list-li:hover {
+        font-family: 'Inika-Bold';
+        font-size: 30px;
+        line-height: 0px;
+        color: #E06733;
+        transition: 0.5s;
+    }
+
+    .main {
+        margin-top: 75px;
+    }
+
+    .welcome {
+        padding-bottom: 32px;
+    }
+
+    .content-welcome {
+        width: auto;
+        margin-top: 26px;
+    }
+
+    .welcome-wrapper {
+        margin: 0px 1.5625em;
+    }
+
+    .img-welcome-768 {
+        display: none;
+    }
+
+    .button-service button {
+        width: 121px;
+        height: 37px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h3 {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .content-welcome button {
+        margin-top: 9px;
+        margin-left: 0px;
+        width: 30%;
+        height: 13%;
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 33px;
+
+    }
+
+    .about-wrapper {
+        margin: 31px 25px 26px;
+    }
+
+    .img-about {
+        width: 46%;
+        margin-top: -16px;
+    }
+
+    .service {
+        margin-top: -4px;
+    }
+
+    .service-wrapper {
+        margin: 0px 1.5625em;
+        padding-bottom: 24px;
+    }
+
+    .up {
+        padding-top: 0px;
+
+    }
+
+    .caption-service {
+        width: auto;
+        margin-right: 16%;
+        margin-top: 30px;
+    }
+
+    .content-about h3 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    .button-service {
+        margin-top: 37px;
+        gap: 7px;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .tablets-service {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .img-price {
+        display: none;
+    }
+
+    .price-wrapper {
+        margin: 0;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .choose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .help-price {
+        align-items: center;
+        margin-top: 21px;
+    }
+
+    .caption-help-price768 {
+        align-items: center;
+    }
+
+    .caption-price h2 {
+        margin-top: 19px;
+        margin-left: -11px;
+        font-size: 25px;
+    }
+
+    .choose-table {
+        margin-top: 31px;
+        width: 221px;
+        min-height: 233px;
+        gap: 15px;
+    }
+
+    .choose-table .select {
+        width: 180px;
+        font-size: 15px;
+        padding-left: 30px;
+        background: url("../assets/image/svg/arrow-grey-btn.svg") no-repeat 76% center;
+        background-color: #EDF2EC;
+    }
+
+    .panel {
+        width: 180px;
+    }
+
+    .caption-help-price768 h2 {
+        font-size: 20px;
+        line-height: 34px;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .button-price button {
+        margin-top: 21px;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .capture-contacts h2 {
+        font-size: 25px;
+        line-height: 3px;
+    }
+
+    .table-contacts {
+        margin-top: 79px;
+        width: 77.8%;
+    }
+
+    .img-contacts {
+        margin-top: 110px;
+        margin-left: -6px;
+    }
+
+    .contacts {
+        height: 445px;
+    }
+
+    .img-contacts img {
+        width: 101px;
+    }
+
+    .contacts-wrapper768 {
+        height: auto;
+    }
+
+    .footer-wrapper {
+        margin-top: -7px;
+    }
+
+    .footer {
+        padding-bottom: 15px;
+    }
+
+    .social {
+        margin-top: -16px;
+    }
+
 }
