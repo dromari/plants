@@ -3,4 +3,292 @@
         max-width: 768px;
         margin: auto;
     }
+
+    .header {
+        height: auto;
+    }
+
+    .header-wrapper {
+        margin: 0 3.2em;
+    }
+
+    .logo {
+        margin-top: 13px;
+    }
+
+    .header-nav-list {
+        flex-wrap: wrap;
+    }
+
+    .header-navigation {
+        margin-top: 21px;
+    }
+
+    .welcome {
+        padding-bottom: 71px;
+    }
+
+    .img-welcome {
+        display: none;
+    }
+
+    .img-welcome-768 {
+        display: flex;
+        width: 290px;
+        height: 270px;
+        margin-top: 40px;
+        margin-left: 29px;
+    }
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 31px;
+        margin-right: 28px;
+        margin-left: 5px;
+        padding-left: 0px;
+    }
+
+    .content-welcome {
+        width: 57%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .welcome-wrapper {
+        height: auto;
+        margin-left: 50px;
+        margin-right: 49px;
+    }
+
+    .content-welcome button {
+        margin-top: 19px;
+        margin-left: -3px;
+    }
+
+    .about-wrapper {
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .content-about {
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        margin: 0 10%;
+    }
+
+    .content-about h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 0;
+        margin-left: -8px;
+        margin-top: 50px;
+    }
+
+    .img-about {
+        width: 38.6%;
+        margin-top: 47px;
+    }
+
+    .service-wrapper {
+        margin: 1px 3.16em;
+        padding-bottom: 69px;
+    }
+
+    .up {
+        flex-wrap: wrap;
+        padding-top: 61px;
+    }
+
+    .caption-service {
+        width: 43.25%;
+    }
+
+
+    .caption-service h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .button-service {
+        margin: 0;
+        margin-top: 41px;
+    }
+
+    .tablets-service {
+        gap: 36px;
+        margin-top: 39px;
+    }
+
+    .card {
+        width: 42%;
+    }
+
+    .img1440-garden,
+    .img1440-planting,
+    .img1440-lawn {
+        display: none;
+    }
+
+    .img768-garden,
+    .img768-planting,
+    .img768-lawn {
+        display: flex;
+    }
+
+    .content-card h4 {
+        margin-top: 9px;
+        margin-left: -2px;
+    }
+
+    .content-card h5 {
+        font-size: 16.85px;
+        line-height: 17px;
+    }
+
+    .price-wrapper {
+        margin: 0 6.4455%;
+        margin-top: 41px;
+        padding-bottom: 76px;
+        flex-wrap: wrap;
+    }
+
+    .choose-table {
+        gap: 32px;
+        margin-top: 57px;
+        min-height: 60%;
+    }
+
+    .caption-price {
+        margin-left: 15px;
+    }
+
+    .caption-price h2 {
+        font-family: 'Inter-Bold';
+        font-style: normal;
+        font-size: 35px;
+        line-height: 42px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .caption-help-price {
+        display: none;
+    }
+
+    .caption-help-price768 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .caption-help-price768 h2 {
+        font-family: 'Inter-Bold';
+        font-style: normal;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: end;
+        color: #000000;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .caption-help-price768 span {
+        color: #499A18;
+    }
+
+    .help-price {
+        margin-top: 100px;
+    }
+
+    .button-price button {
+        margin-top: 28px;
+    }
+
+    .img-price {
+        margin-top: 29px;
+        margin-right: -9px;
+    }
+
+    .contacts {
+        height: 739px;
+    }
+
+    .contacts-wrapper {
+        display: none;
+    }
+
+    .contacts-wrapper768 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 738px;
+    }
+
+    .capture-contacts {
+        margin-top: -20px;
+        margin-left: -10px;
+        width: auto;
+    }
+
+    .table-contacts {
+        margin-top: 83px;
+        width: 58.8%;
+    }
+
+    .img-contacts {
+        margin-top: 0;
+        margin-left: 0;
+        width: auto;
+        margin-left: 19px;
+        margin-top: 223px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    .footer {
+        height: auto;
+        line-height: 0px;
+        padding-bottom: 31px;
+    }
+
+    .year {
+        margin-top: 20px;
+        gap: 23px;
+    }
+
+    .year p {
+        margin-left: -6px;
+    }
+
+    .rss {
+        margin-left: -1px;
+        margin-top: 20px;
+    }
+
+    .social {
+        margin-top: -4px;
+        margin-left: 5px;
+    }
+
+    .footer-nav-list {
+        margin-top: 41px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+
 }
